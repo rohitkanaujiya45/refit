@@ -1,0 +1,1953 @@
+<div class="table-container">
+  <table class="equipment-table">
+    <thead>
+      <tr>
+        <th width="62">Ser</th>
+        <th width="320">Equipment</th>
+        <th width="184">No of Eqpt to be cleared prior<br>BT/SSC1/SSC2</th>
+        <th width="111">Date</th>
+        <th width="101">SDC</th>
+        <th width="128">Vibration<br>Trials</th>
+        <th width="86">SPM</th>
+        <th width="156">Mount Attenuation</th>
+        <th width="170">Performance Trials</th>
+        <th width="113">Overall Status</th>
+        <th width="85">Man<br>days</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row 1-2 with merged cells -->
+      <tr>
+        <td>1.</td>
+        <td class="red-text">Port Main Engine</td>
+        <td rowspan="2" colspan="9" class="centered-text" style="text-align: center;"><b>To be cleared by DTTT(V)</b></td>
+        
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td class="red-text">Stbd Main Engine</td>
+        
+      </tr>
+      
+      <!-- Row 3-8 -->
+      <tr>
+        <td>3.</td>
+        <td>Gear Box (Stbd)</td>
+        <td style="text-align: center;" rowspan="6" class="multi-line">
+          (a) SDCs.<br><br>
+          (b) Shaft Lock Checks.<br><br>
+          (c) Torsionmeter Calibration Certificate<br>
+          (d) POL Report<br><br>
+        </td>
+        <td rowspan="2"><input type="date" formControlName="equipmentData[2].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[2].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[2].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[2].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[2].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[2].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[2].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[2].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Gear Box (Port)</td>
+        <!-- <td><input type="date" formControlName="equipmentData[3].date" class="form-input"></td> -->
+        <td><input type="text" formControlName="equipmentData[3].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[3].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[3].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[3].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[3].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[3].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[3].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Shafting (Port)</td>
+        <td><input type="date" formControlName="equipmentData[4].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[4].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[4].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[4].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[4].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[4].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[4].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[4].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Shafting (Stbd)</td>
+        <td><input type="date" formControlName="equipmentData[5].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[5].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[5].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[5].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[5].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[5].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[5].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[5].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>CPP (Port)</td>
+        <td><input type="date" formControlName="equipmentData[6].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[6].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[6].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[6].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[6].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[6].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[6].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[6].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>CPP(Stbd)</td>
+        <td><input type="date" formControlName="equipmentData[7].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[7].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[7].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[7].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[7].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[7].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[7].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[7].manDays" class="form-input"></td>
+      </tr>
+    
+      <!-- Row 13-18 -->
+      <!-- <tr *ngFor="let item of gbPumps; let i = index">
+        <td>{{item.id}}.</td>
+        <td>{{item.name}}</td>
+        <td *ngIf="i === 0" rowspan="6" class="centered-text">To be cleared prior BT</td>
+        <td><input type="date" formControlName="equipmentData[11+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[11+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[11+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[11+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[11+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[11+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[11+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[11+i+1].manDays" class="form-input"></td>
+      </tr> -->
+
+ <tr>
+     <td>9.</td>
+        <td>ME Lub Oil Priming Pump 1</td>
+        <td  style="text-align: center;" rowspan="4" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>ME Lub Oil Priming Pump 2</td>
+       <td ><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>ME Lub Oil Priming Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+        <td>12.</td>
+        <td>ME Lub Oil Priming Pump 4</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+     <td>13.</td>
+        <td>GB LO Stand by Pump (Port)</td>
+        <td  style="text-align: center;" rowspan="6" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td>GB LO Stand by Pump (Stbd)</td>
+       <td ><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td>GB SW Stand by Pump (Port)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+        <td>16.</td>
+        <td>GB SW Stand by Pump (Stbd)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+        <td>17.</td>
+        <td>CPP Stand by Pump (Port)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+        <td>18.</td>
+        <td>CPP Stand by Pump (Stbd)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Steering Gear</b></td>
+      </tr>
+      
+
+       <tr>
+     <td>19.</td>
+        <td>Steering Gear Harbour Trials</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td>Steering Pump (Port)</td>
+       <td ><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td>Steering Pump (Stbd)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td>Steering Gear Sea Trials</td>
+        
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+      <!-- 23-26 -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Stabiliser</b></td>
+      </tr>
+
+      <tr>
+     <td>23.</td>
+        <td>Stabiliser Harbour Trials</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td>Stabiliser Pump (Port)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>25.</td>
+        <td>Stabiliser Pump (Stbd)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>26.</td>
+        <td>Stabiliser Sea Trials</td>
+        
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior SSC 2
+        </td>
+       <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+      <!-- 27-30 -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>HPAC System</b></td>
+      </tr>
+
+      <tr>
+     <td>27.</td>
+        <td>HPAC 1</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          02 HPAC to be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>28.</td>
+        <td>HPAC 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>29.</td>
+        <td>HPAC 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>30.</td>
+        <td>Compressed Air System</td>
+        
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+       <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+       <!-- 31-42 -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>AC Plant and System</b></td>
+      </tr>
+
+      <tr>
+     <td>31.</td>
+        <td>AC Plant 1</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          At least 02 AC Plants to be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>32.</td>
+        <td>AC Plant 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>33.</td>
+        <td>AC Plant 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>34.</td>
+        <td>AC Chilled Water Pump 1</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          Two pumps to be cleared prior BT. One prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>35.</td>
+        <td>AC Chilled Water Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>36.</td>
+        <td>AC Chilled Water Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>37.</td>
+        <td>AC Sea Water Pump 1</td>
+        <td  style="text-align: center;" rowspan="3" class="multi-line">
+          Two pumps to be cleared prior BT. One prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>38.</td>
+        <td>AC Sea Water Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>39.</td>
+        <td>AC Sea Water Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>40.</td>
+        <td>Aux Sea Water Pump 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          Two pumps to be cleared prior BT. One prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>41.</td>
+        <td>Aux Sea Water Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>42.</td>
+        <td>Chilled Water System</td>
+        
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+       <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<!-- Ref Plant -->
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Ref Plant</b></td>
+      </tr>
+ <tr>
+     <td>43.</td>
+        <td>Ref Plant 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+         One Plant 1 to be cleared prior BT. One prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>44.</td>
+        <td>Ref Plant 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>45.</td>
+        <td>Ref Sea Water Pump 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          One Pump 1 to be cleared prior BT. One prior SSC
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>46.</td>
+        <td>Ref Sea Water Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+
+      <!-- RO Plant Plant -->
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>RO Plant</b></td>
+      </tr>
+ <tr>
+     <td>47.</td>
+        <td>RO Plant 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>48.</td>
+        <td>RO Plant 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <!-- Fire Main Pumps & System -->
+
+       <!-- Ref Plant -->
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Fire Main Pumps & System</b></td>
+      </tr>
+ <tr>
+     <td>49.</td>
+        <td>Fire Main Pump 1</td>
+        <td  style="text-align: center;" rowspan="5" class="multi-line">
+          At least 03 Fire Pumps be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>50.</td>
+        <td>Fire Main Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>51.</td>
+        <td>Fire Main Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>52.</td>
+        <td>Fire Main Pump 4</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>53.</td>
+        <td>Fire Main Pump 5</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>54.</td>
+        <td>Hydrants (50)</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>55.</td>
+        <td>Fire Main System</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+
+      <!-- Bilge Pumps & System -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Bilge Pumps & System</b></td>
+      </tr>
+ <tr>
+     <td>56.</td>
+        <td>Bilge Pump 1</td>
+        <td  style="text-align: center;" rowspan="5" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>57.</td>
+        <td>Bilge Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>58.</td>
+        <td>Bilge Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>59.</td>
+        <td>Bilge Pumping out System</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>60.</td>
+        <td>Eductors (15)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>61.</td>
+        <td>Oil Water Separtor 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior SSC 2
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>62.</td>
+        <td>Oil Water Separtor 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+
+
+       <!-- Fresh Water Pumps & System -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Fresh Water Pumps & System</b></td>
+      </tr>
+ <tr>
+     <td>63.</td>
+        <td>Fresh Water Pump 1</td>
+        <td  style="text-align: center;" rowspan="4" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>64.</td>
+        <td>Fresh Water Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>65.</td>
+        <td>Fresh Water Pump 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>66.</td>
+        <td>Fresh Water System</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <!-- Fuel Oil Filling and Transfer System -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Fuel Oil Filling and Transfer System</b></td>
+      </tr>
+ <tr>
+     <td>67.</td>
+        <td>Fuel Oil Transfer Pump 1</td>
+        <td  style="text-align: center;" rowspan="4" class="multi-line">
+         To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>68.</td>
+        <td>Fuel Oil Transfer Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>69.</td>
+        <td>Fuel Oil Stripping Pump 1</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>70.</td>
+        <td>Fuel Oil Stripping Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       
+       <tr>
+     <td>71.</td>
+        <td>Fuel Centrifuge  (Fwd)</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>72.</td>
+        <td>Fuel Centrifuge  (Aft)</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>73.</td>
+        <td>Aux Fuel Oil Transfer Pump 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>74.</td>
+        <td>Aux Fuel Oil Transfer Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+     <td>75.</td>
+        <td>Fuel System</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+ <!-- lub Oil Filling and Transfer System -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Lub Oil Filling and Transfer System</b></td>
+      </tr>
+
+<tr>
+     <td>76.</td>
+        <td>Lub Oil Transfer Pump 1</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>77.</td>
+        <td>Lub Oil Transfer Pump 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+<tr>
+     <td>78.</td>
+        <td>Lub Oil Centrifuge 1</td>
+        <td  style="text-align: center;" rowspan="4" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>79.</td>
+        <td>Lub Oil Centrifuge 2</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>80.</td>
+        <td>Lub Oil Centrifuge 3</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>81.</td>
+        <td>Lub Oil Centrifuge 4</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+     <td>82.</td>
+        <td>Lub Oil System</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+ <!-- AVCAT Pumps & System -->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>AVCAT Pumps & System</b></td>
+      </tr>
+<tr>
+     <td>83.</td>
+        <td>AVCAT Transfer Pump</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be cleared prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>84.</td>
+        <td>AVCAT Circulating Pump</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+     <td>85.</td>
+        <td>AVCAT System</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <!-- Fire Fighting System-->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Fire Fighting System</b></td>
+      </tr>
+<tr>
+     <td>86.</td>
+        <td>CO2 Major Fire Fighting System</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+      <!-- Miscellanous-->
+
+       <tr>
+        <td colspan="11" class="section-header" style="text-align: left;"><b>Miscellanous</b></td>
+      </tr>
+<tr>
+     <td>87.</td>
+        <td>Cathelco System</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior SSC 1
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+
+<tr>
+     <td>88.</td>
+        <td>Shaft Ground System</td>
+        <td  style="text-align: center;" rowspan="4" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>89.</td>
+        <td>EOT Checks</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].vibration" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].spm" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].mountAttenuation" class="form-input"></td>
+        <td><input type="text" formControlName="equipmentData[17+i+1].performance" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>90.</td>
+        <td>Rod Gearings (118)</td>
+        <td rowspan="" ><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+        <td>91.</td>
+        <td>Bilge Plates & Hygiene</td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+<tr>
+<tr>
+     <td>92.</td>
+        <td>Tank Level Indications</td>
+        <td  style="text-align: center;" rowspan="1" class="multi-line">
+          To be cleared prior BT
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+                <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+     <td>93.</td>
+        <td>IMCS 5/IPMS</td>
+        <td rowspan="1" class="multi-line">
+          To be cleared prior SSC 2
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+                <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+       <tr>
+     <td>94.</td>
+        <td>Acoustic Hygiene Audit</td>
+        <td  style="text-align: center;" rowspan="2" class="multi-line">
+          To be undertaken prior SSC 1 & liquidation prior SSC 2
+        </td>
+        <td rowspan=""><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+               <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+      <tr>
+        <td>95.</td>
+        <td>ABN Trials</td>
+        <td rowspan="" ><input type="date" formControlName="equipmentData[17+i+1].date" class="form-input"></td>
+        <td colspan="5"><input type="text" formControlName="equipmentData[17+i+1].sdc" class="form-input"></td>
+       
+        <td>
+          <select formControlName="equipmentData[17+i+1].status" class="form-input">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </td>
+        <td><input type="number" formControlName="equipmentData[17+i+1].manDays" class="form-input"></td>
+      </tr>
+    </tbody>
+  </table>
+
+ <!-- Pagination controls -->
+  <div class="pagination-controls">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{currentPage}} of {{totalPages}}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    
+    <div class="page-size-selector">
+      <span>Rows per page:</span>
+      <select formControlName="pageSize" (change)="updatePageSize()">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+  </div>
+
+
+  
+  <div class="actions">
+    <button (click)="saveData()" class="save-btn">Save Data</button>
+    <button (click)="resetForm()" class="reset-btn">Reset Form</button>
+  </div>
+</div>

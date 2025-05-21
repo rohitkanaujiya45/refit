@@ -1,0 +1,192 @@
+<div class="container">
+    <form [formGroup]="form">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Medicine Name</th>
+            <th>Quantity</th>
+            <th>Remarks</th>
+            <th>Cracks</th>
+            <th>Expiring</th>
+            <th>Manufacturing</th>
+            <th>Tabs</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="showRows.row1">
+            <td id="row-number-1">1</td>
+            <td>{{ form.get('medicine1')?.value }}</td>
+            <td><input formControlName="quantity1" type="text" class="form-control"></td>
+            <td><input formControlName="remarks1" type="text" class="form-control"></td>
+            <td><input formControlName="cracks1" type="text" class="form-control"></td>
+            <td><input formControlName="expiring1" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing1" type="text" class="form-control"></td>
+            <td><input formControlName="tabs1" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow1()" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row2">
+            <td id="row-number-2">2</td>
+            <td>{{ form.get('medicine2')?.value }}</td>
+            <td><input formControlName="quantity2" type="text" class="form-control"></td>
+            <td><input formControlName="remarks2" type="text" class="form-control"></td>
+            <td><input formControlName="cracks2" type="text" class="form-control"></td>
+            <td><input formControlName="expiring2" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing2" type="text" class="form-control"></td>
+            <td><input formControlName="tabs2" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow2()" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row3">
+            <td id="row-number-3">3</td>
+            <td>{{ form.get('medicine3')?.value }}</td>
+            <td><input formControlName="quantity3" type="text" class="form-control"></td>
+            <td><input formControlName="remarks3" type="text" class="form-control"></td>
+            <td><input formControlName="cracks3" type="text" class="form-control"></td>
+            <td><input formControlName="expiring3" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing3" type="text" class="form-control"></td>
+            <td><input formControlName="tabs3" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow3()" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row4">
+            <td id="row-number-4">4</td>
+            <td>{{ form.get('medicine4')?.value }}</td>
+            <td><input formControlName="quantity4" type="text" class="form-control"></td>
+            <td><input formControlName="remarks4" type="text" class="form-control"></td>
+            <td><input formControlName="cracks4" type="text" class="form-control"></td>
+            <td><input formControlName="expiring4" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing4" type="text" class="form-control"></td>
+            <td><input formControlName="tabs4" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow4()" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row5">
+            <td id="row-number-5">5</td>
+            <td>{{ form.get('medicine5')?.value }}</td>
+            <td><input formControlName="quantity5" type="text" class="form-control"></td>
+            <td><input formControlName="remarks5" type="text" class="form-control"></td>
+            <td><input formControlName="cracks5" type="text" class="form-control"></td>
+            <td><input formControlName="expiring5" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing5" type="text" class="form-control"></td>
+            <td><input formControlName="tabs5" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow5()" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row6">
+            <td id="row-number-6">6</td>
+            <td>{{ form.get('medicine6')?.value }}</td>
+            <td><input formControlName="quantity6" type="text" class="form-control"></td>
+            <td><input formControlName="remarks6" type="text" class="form-control"></td>
+            <td><input formControlName="cracks6" type="text" class="form-control"></td>
+            <td><input formControlName="expiring6" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing6" type="text" class="form-control"></td>
+            <td><input formControlName="tabs6" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow6()" class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <button type="button" class="btn btn-primary" (click)="saveData()">Save</button>
+    </form>
+  </div>
+   
+<!-- 
+   <div class="container">
+    <form [formGroup]="form">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Medicine Name</th>
+            <th>Quantity</th>
+            <th>Remarks</th>
+            <th>Cracks</th>
+            <th>Expiring</th>
+            <th>Manufacturing</th>
+            <th>Tabs</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="showRows.row1">
+            <td id="row-number-1">1</td>
+            <td>{{ form.get('medicine1')?.value }}</td>
+            <td><input formControlName="quantity1" type="text" class="form-control"></td>
+            <td><input formControlName="remarks1" type="text" class="form-control"></td>
+            <td><input formControlName="cracks1" type="text" class="form-control"></td>
+            <td><input formControlName="expiring1" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing1" type="text" class="form-control"></td>
+            <td><input formControlName="tabs1" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(1)" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row2">
+            <td id="row-number-2">2</td>
+            <td>{{ form.get('medicine2')?.value }}</td>
+            <td><input formControlName="quantity2" type="text" class="form-control"></td>
+            <td><input formControlName="remarks2" type="text" class="form-control"></td>
+            <td><input formControlName="cracks2" type="text" class="form-control"></td>
+            <td><input formControlName="expiring2" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing2" type="text" class="form-control"></td>
+            <td><input formControlName="tabs2" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(2)" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row3">
+            <td id="row-number-3">3</td>
+            <td>{{ form.get('medicine3')?.value }}</td>
+            <td><input formControlName="quantity3" type="text" class="form-control"></td>
+            <td><input formControlName="remarks3" type="text" class="form-control"></td>
+            <td><input formControlName="cracks3" type="text" class="form-control"></td>
+            <td><input formControlName="expiring3" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing3" type="text" class="form-control"></td>
+            <td><input formControlName="tabs3" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(3)" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row4">
+            <td id="row-number-4">4</td>
+            <td>{{ form.get('medicine4')?.value }}</td>
+            <td><input formControlName="quantity4" type="text" class="form-control"></td>
+            <td><input formControlName="remarks4" type="text" class="form-control"></td>
+            <td><input formControlName="cracks4" type="text" class="form-control"></td>
+            <td><input formControlName="expiring4" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing4" type="text" class="form-control"></td>
+            <td><input formControlName="tabs4" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(4)" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row5">
+            <td id="row-number-5">5</td>
+            <td>{{ form.get('medicine5')?.value }}</td>
+            <td><input formControlName="quantity5" type="text" class="form-control"></td>
+            <td><input formControlName="remarks5" type="text" class="form-control"></td>
+            <td><input formControlName="cracks5" type="text" class="form-control"></td>
+            <td><input formControlName="expiring5" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing5" type="text" class="form-control"></td>
+            <td><input formControlName="tabs5" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(5)" class="btn btn-danger">Delete</button></td>
+          </tr>
+  
+          <tr *ngIf="showRows.row6">
+            <td id="row-number-6">6</td>
+            <td>{{ form.get('medicine6')?.value }}</td>
+            <td><input formControlName="quantity6" type="text" class="form-control"></td>
+            <td><input formControlName="remarks6" type="text" class="form-control"></td>
+            <td><input formControlName="cracks6" type="text" class="form-control"></td>
+            <td><input formControlName="expiring6" type="text" class="form-control"></td>
+            <td><input formControlName="manufacturing6" type="text" class="form-control"></td>
+            <td><input formControlName="tabs6" type="text" class="form-control"></td>
+            <td><button type="button" (click)="deleteRow(6)" class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <button type="button" class="btn btn-primary" (click)="saveData()">Save</button>
+    </form>
+  </div>
+  
+   -->

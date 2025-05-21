@@ -1,0 +1,120 @@
+.dropdown-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    padding: 24px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ng-select base styling */
+  ::ng-deep .ng-select {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 16px;
+  }
+  
+  /* ng-select container styling */
+  ::ng-deep .ng-select .ng-select-container {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    padding: 10px 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ::ng-deep .ng-select.ng-select-focused .ng-select-container {
+    border-color: #3f51b5;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.15);
+  }
+  
+  /* selected value */
+  ::ng-deep .ng-select .ng-value {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  /* placeholder style */
+  ::ng-deep .ng-select .ng-placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* dropdown panel */
+  ::ng-deep .ng-select .ng-dropdown-panel {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  /* options */
+  ::ng-deep .ng-select .ng-option {
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+  }
+  
+  ::ng-deep .ng-select .ng-option:last-child {
+    border-bottom: none;
+  }
+  
+  ::ng-deep .ng-select .ng-option:hover {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+  }
+  
+  /* selected option */
+  ::ng-deep .ng-select .ng-option-selected {
+    background-color: #c5cae9;
+    font-weight: 600;
+  }
+  
+  /* dropdown arrow */
+  ::ng-deep .ng-select .ng-select-container {
+    position: relative;
+  }
+  
+  ::ng-deep .ng-select .ng-select-container::after {
+    content: '▾';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #999;
+    pointer-events: none;
+  }
+  
+  /* hide clear (×) by default */
+  ::ng-deep .ng-select .ng-clear-wrapper {
+    display: none;
+  }
+  
+  /* show clear when value is selected */
+  ::ng-deep .ng-select.ng-select-single.ng-has-value .ng-clear-wrapper {
+    display: flex !important;
+  }
+  
+  /* input style */
+  ::ng-deep .ng-input input {
+    padding-left: 12px !important;
+    font-size: 15px;
+    color: #333;
+  }
+  

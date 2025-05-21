@@ -1,0 +1,85 @@
+
+<div class="table-container" [formGroup]="form">
+    <h3 class="center-heading">Mount Name Table</h3>
+    <table>
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Mount Name</th>
+            <th>Horrer</th>
+            <th>Abc</th>
+            <th>Dear</th>
+            <th>Remarks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody formArrayName="mountForm1">
+        <tr *ngFor="let eq of form1.controls; let i=index" [formGroupName]="i">
+            <td>
+                {{i+1}}
+            </td>
+            <td><input type="text" formControlName="mountName" placeholder="Enter the Mount Name" /></td>
+            <td><input type="text" [formControlName]="getFieldName(getFormGroup(eq), 'horrer')" placeholder="Enter Horrer" /></td>
+            <td><input type="text" [formControlName]="getFieldName(getFormGroup(eq), 'abc')" placeholder="Enter Abc" /></td>
+            <td><input type="text" [formControlName]="getFieldName(getFormGroup(eq), 'dear')" placeholder="Enter Dear" /></td>
+            <td><input type="text" [formControlName]="getFieldName(getFormGroup(eq), 'remarks')" placeholder="Enter Remarks" /></td>
+            <td><button mat-icon-button (click)="removeForm1(i)">
+                <mat-icon>delete</mat-icon>
+            </button></td>
+        </tr>
+    </tbody>
+    </table>
+        <div class="left-button">
+            <button mat-icon-button color="accent" (click)="addForm1()">
+                <mat-icon>add</mat-icon>
+
+            </button>
+        </div>
+<hr/>
+    <h3 class="center-heading">Mount Table</h3>
+    <table>
+    <thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Mount Number</th>
+            <th>Quantity</th>
+            <th>Remarks</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody formArrayName="mountForm2">
+        <tr *ngFor="let eq of form2.controls; let i=index" [formGroupName]="i">
+            <td>
+                {{i+1}}
+            </td>
+            <td><input type="text" formControlName="mountNumber" [readonly]="i < 12" placeholder="Enter the Mount Number" /></td>
+            <td><input type="text" [formControlName]="'quantity_'+eq.get('mountNumber')?.value" placeholder="Enter Quantity" /></td>
+            <td><input type="text" [formControlName]="'remark_'+eq.get('mountNumber')?.value" placeholder="Enter Remarks" /></td>
+            <td><button mat-icon-button (click)="removeForm2(i)">
+                <mat-icon>delete</mat-icon>
+            </button></td>
+        </tr>
+
+    </tbody>
+    </table>
+        <div class="left-button">
+            <button mat-icon-button color="accent" (click)="addForm2()">
+                <mat-icon>add</mat-icon>
+
+            </button>
+        </div>
+        <div class="editor-container" style="margin-top: 20px;">
+            <h3 class="center-heading">Additional Notes</h3>
+            <div id="editor"></div>
+          </div>
+        <div class="left-button">
+            <button mat-icon-button color="primary" (click)="onSubmitAll()">
+                <mat-icon>send</mat-icon>
+
+            </button>
+        </div>
+
+    
+</div>
+
+

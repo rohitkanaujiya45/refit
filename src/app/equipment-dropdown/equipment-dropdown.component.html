@@ -1,0 +1,16 @@
+<div class="dropdown-box">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+      <ng-select
+        formControlName="equipment"
+        [items]="equipments"
+        bindLabel="label"
+        bindValue="value"
+        placeholder="Select Equipment"
+        [searchable]="true"
+        (change)="onSelectChange($event)">
+      </ng-select>
+  
+      <!-- <button type="submit" [disabled]="form.invalid">Submit</button> -->
+    </form>
+  </div>
+  

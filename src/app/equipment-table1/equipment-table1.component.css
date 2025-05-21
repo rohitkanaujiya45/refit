@@ -1,0 +1,148 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.equipment-table th, 
+.equipment-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.equipment-table th {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  background-color: #f2f2f2;
+}
+
+
+.red-text {
+  color: red;
+}
+
+.multi-line {
+  white-space: pre-line;
+  vertical-align: top;
+}
+
+.section-header {
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #e6e6e6;
+}
+
+.form-input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+select.form-input {
+  height: 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Adjust column widths as per your original table */
+.equipment-table th:nth-child(1),
+.equipment-table td:nth-child(1) {
+  width: 62px;
+  text-align: center;
+}
+
+.equipment-table th:nth-child(2),
+.equipment-table td:nth-child(2) {
+  width: 320px;
+}
+
+/* Add similar nth-child rules for other columns if needed */
+
+/* Previous styles remain the same */
+
+/* Pagination styles */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.pagination-controls button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.page-size-selector {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-size-selector select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
