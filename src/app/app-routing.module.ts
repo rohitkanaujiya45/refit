@@ -11,6 +11,10 @@ import { Form3Component } from './form3/form3.component';
 import { EquipmentDropdownComponent } from './equipment-dropdown/equipment-dropdown.component';
 import { EquipmentTableComponent } from './equipment-table/equipment-table.component';
 import { EquipmentTable1Component } from './equipment-table1/equipment-table1.component';
+import { EquipmentTable2Component } from './equipment-table2/equipment-table2.component';
+import { EquipmentFormComponent } from './equipment-form/equipment-form.component';
+import { ThermalTableComponent } from './thermal-table/thermal-table.component';
+import { ShaftingVibrationComponent } from './shafting-vibration/shafting-vibration.component';
 
 const routes: Routes = [
   {
@@ -40,6 +44,15 @@ const routes: Routes = [
           path:'qqq' , component: EquipmentTableComponent},
           {
           path:'www' , component: EquipmentTable1Component},
+          {
+          path:'eee' , component: EquipmentTable2Component},
+          {
+          path:'rrr' , component: EquipmentFormComponent},
+          {
+          path:'thermal' , component: ThermalTableComponent},
+          {
+          path:'shaft' , component: ShaftingVibrationComponent},
+          
        
 ];
 

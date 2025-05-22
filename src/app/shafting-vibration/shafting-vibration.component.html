@@ -1,0 +1,400 @@
+<!-- <div class="table-container">
+  <h2 class="table-title">Shafting Vibration Parameters</h2>
+  
+  <form [formGroup]="vibrationForm">
+    <table class="vibration-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Ser</th>
+          <th rowspan="2">Measuring Point</th>
+          <th rowspan="2">Dir</th>
+          <th rowspan="2">Limit</th>
+          <th colspan="2">Max Overall Value</th>
+          <th colspan="2">Max Overall Value [in mm/s at 0.0N]</th>
+        </tr>
+        <tr>
+          <th>Port</th>
+          <th>Stbd</th>
+          <th>Port</th>
+          <th>Stbd</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr >
+          <td>(a)</td>
+          <td>MTB 1</td>
+          <td>V</td>
+          <td rowspan="9">
+            <div>Trend</div>
+            <div>Limit 3</div><br>
+            <div>mm/sec</div>
+            <div>Alarm</div>
+            <div>7 mm/sec</div>
+          </td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td>NA</td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td>NA</td>
+        </tr>
+
+        <tr >
+          <td>(b)</td>
+          <td>MTB 2</td>
+          <td>V</td>
+          <td></td>
+          <td>NA</td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td>NA</td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(c)</td>
+          <td>PB 1</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td>NA</td>
+        </tr>
+
+        <tr >
+          <td>(d)</td>
+          <td>PB 2</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(e)</td>
+          <td>PB 3</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(f)</td>
+          <td>PB 4</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(g)</td>
+          <td>PB 5</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(h)</td>
+          <td>PB 6</td>
+          <td>V</td>
+          <td></td>
+          <td>NA</td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td>NA</td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(j)</td>
+          <td>PB 7</td>
+          <td>V</td>
+          <td></td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+
+        <tr >
+          <td>(k)</td>
+          <td>Stern Tube</td>
+          <td>V</td>
+          <td>
+            <div>Trend</div>
+            <div>2 mm/sec</div>
+            <div>Alarm</div>
+            <div>7 mm/sec</div>
+          </td>
+          <td><input type="number" formControlName="port1" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd1" class="vibration-input"></td>
+          <td><input type="number" formControlName="port2" class="vibration-input"></td>
+          <td><input type="number" formControlName="stbd2" class="vibration-input"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div> -->
+
+
+<div class="table-container">
+  <h2 class="table-title" style="text-align: left;">Shafting Vibration Parameters</h2>
+  
+  <table class="vibration-table">
+    <thead>
+      <tr>
+        <th rowspan="2">Ser</th>
+        <th rowspan="2">Measuring Point</th>
+        <th rowspan="1">Dir</th>
+        <th rowspan="1">Limit</th>
+        <th colspan="2">Max Overall Value in mm/s at 0.00N/SRPM</th>
+        <th colspan="2">Max Overall Value in mm/s at 0.0N/SRPM</th>
+      </tr>
+      <tr>
+        <th>RPM</th>
+        <th></th>
+        <th>Port Shaft</th>
+        <th>Stbd Shaft</th>
+        <th>Port Shaft</th>
+        <th>Stbd Shaft</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Row (a) MTB 1 -->
+      <tr>
+        <td rowspan="3">(a)</td>
+        <td rowspan="3">MTB 1</td>
+        <td>V</td>
+        <td rowspan="27">
+          <div>Trend</div>
+          <div>Limit 3 mm/sec</div>
+          <br>
+          <div>Alarm 7 mm/sec</div>
+        </td>
+        <td><input type="number" formControlName="mtb1V.stbd1" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+        
+        <td><input type="number" formControlName="mtb1V.stbd2" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="mtb1A.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="mtb1H.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb1H.stbd2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Row (b) MTB 2 -->
+      <tr>
+        <td rowspan="3">(b)</td>
+        <td rowspan="3">MTB 2</td>
+        <td>V</td>
+        <td rowspan="3">NA</td>
+        <td><input type="number" formControlName="mtb2V.stbd1" class="vibration-input"></td>
+        <td rowspan="3">NA</td>
+        <td><input type="number" formControlName="mtb2V.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="mtb2A.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb2A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="mtb2H.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="mtb2H.stbd2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Row (c) PB 1 -->
+      <tr>
+        <td rowspan="3">(c)</td>
+        <td rowspan="3">PB 1</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td rowspan="15">NA</td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <td rowspan="15">NA</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+
+      <!-- Continue with remaining rows (d)-(k) following same structure -->
+       <tr>
+        <td rowspan="3">(d)</td>
+        <td rowspan="3">PB 2</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+<tr>
+        <td rowspan="3">(e)</td>
+        <td rowspan="3">PB 3</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+
+      <tr>
+        <td rowspan="3">(f)</td>
+        <td rowspan="3">PB 4</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+<tr>
+        <td rowspan="3">(g)</td>
+        <td rowspan="3">PB 5</td>
+        <td>V</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.port2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td rowspan="3">(h)</td>
+        <td rowspan="3">PB 6</td>
+        <td>V</td>
+        <td rowspan="6">NA</td>
+        <td><input type="number" formControlName="pb1V.stbd1" class="vibration-input"></td>
+        <td rowspan="6">NA</td>
+        <td><input type="number" formControlName="pb1V.port1" class="vibration-input"></td>
+        
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.stbd2" class="vibration-input"></td>
+      </tr>
+
+<tr>
+        <td rowspan="3">(j)</td>
+        <td rowspan="3">PB 7</td>
+        <td>V</td>
+        
+        <td><input type="number" formControlName="pb1V.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1V.port2" class="vibration-input"></td>
+        <!-- <td>NA</td> -->
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="pb1A.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1A.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="pb1H.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="pb1H.stbd2" class="vibration-input"></td>
+      </tr>
+     
+      <!-- ... -->
+      
+      <!-- Row (k) Stern Tube -->
+      <tr>
+        <td rowspan="3">(k)</td>
+        <td rowspan="3">Stern Tube</td>
+        <td>V</td>
+        <td rowspan="3">
+          <div>Trend</div>
+          <div>2 mm/sec</div>
+          <br>
+          <div>Alarm 7 mm/sec</div>
+        </td>
+        <td><input type="number" formControlName="sternTubeV.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeV.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>A</td>
+        
+        <td><input type="number" formControlName="sternTubeA.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeA.stbd2" class="vibration-input"></td>
+      </tr>
+      <tr>
+        <td>H</td>
+        
+        <td><input type="number" formControlName="sternTubeH.port1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.stbd1" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.port2" class="vibration-input"></td>
+        <td><input type="number" formControlName="sternTubeH.stbd2" class="vibration-input"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

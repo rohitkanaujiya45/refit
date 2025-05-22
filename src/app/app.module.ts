@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RestaurentDashComponent } from './restaurent-dash/restaurent-dash.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -25,11 +25,16 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { EquipmentTableComponent } from './equipment-table/equipment-table.component';
 import { EquipmentTable1Component } from './equipment-table1/equipment-table1.component';
+import { EquipmentTable2Component } from './equipment-table2/equipment-table2.component';
+import { EquipmentFormComponent } from './equipment-form/equipment-form.component';
+import { ThermalTableComponent } from './thermal-table/thermal-table.component';
+import { ShaftingVibrationComponent } from './shafting-vibration/shafting-vibration.component';
 // import { EquipmentDropdownComponent } from './equipment-dropdown/equipment-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     RestaurentDashComponent,
     LoginComponent,
     SignupComponent,
@@ -40,10 +45,15 @@ import { EquipmentTable1Component } from './equipment-table1/equipment-table1.co
     EquipmentDropdownComponent,
     EquipmentTableComponent,
     EquipmentTable1Component,
+    EquipmentTable2Component,
+    EquipmentFormComponent,
+    ThermalTableComponent,
+    ShaftingVibrationComponent,
     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

@@ -1,0 +1,214 @@
+<!-- <form [formGroup]="equipmentForm">
+  <table>
+    <thead>
+      <tr>
+        <th>Ser</th>
+        <th>System</th>
+        <th>Valve Fitted in System</th>
+        <th>Description</th>
+        <th>IPMS/MCS-5</th>
+        <th>DL Reference</th>
+        <th>Status</th>
+        <th>Remark</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of systems; let i = index">
+        <td>{{ i + 1 }}.</td>
+        <td>{{ item }}</td>
+        <td><input type="text" [formControlName]="'valve' + (i+1)" /></td>
+        <td><input type="text" [formControlName]="'desc' + (i+1)" /></td>
+        <td><input type="text" [formControlName]="'ipms' + (i+1)" /></td>
+        <td><input type="text" [formControlName]="'dl' + (i+1)" /></td>
+        <td><input type="text" [formControlName]="'status' + (i+1)" /></td>
+        <td><input type="text" [formControlName]="'remark' + (i+1)" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" (click)="submitForm()">Submit</button>
+</form> -->
+<form [formGroup]="equipmentForm">
+  <table>
+    <thead>
+      <tr>
+        <th>Ser</th>
+        <th>System</th>
+        <th>Valve Fitted in System</th>
+        <th>Description</th>
+        <th>IPMS/MCS-5</th>
+        <th>DL Reference</th>
+        <th>Status</th>
+        <th>Remark</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>Fire main System</td>
+        <td><input type="text" formControlName="valve1" /></td>
+        <td><input type="text" formControlName="desc1" /></td>
+        <td><input type="text" formControlName="ipms1" /></td>
+        <td><input type="text" formControlName="dl1" /></td>
+        <td><select formControlName="status1">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark1" /></td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Air compressor System</td>
+        <td><input type="text" formControlName="valve2" /></td>
+        <td><input type="text" formControlName="desc2" /></td>
+        <td><input type="text" formControlName="ipms2" /></td>
+        <td><input type="text" formControlName="dl2" /></td>
+        <td>
+            <select formControlName="status2">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select>
+        </td>
+        <td><input type="text" formControlName="remark2" /></td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Lub Oil System</td>
+        <td><input type="text" formControlName="valve3" /></td>
+        <td><input type="text" formControlName="desc3" /></td>
+        <td><input type="text" formControlName="ipms3" /></td>
+        <td><input type="text" formControlName="dl3" /></td>
+        <td><select formControlName="status3">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark3" /></td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Fuel System</td>
+        <td><input type="text" formControlName="valve4" /></td>
+        <td><input type="text" formControlName="desc4" /></td>
+        <td><input type="text" formControlName="ipms4" /></td>
+        <td><input type="text" formControlName="dl4" /></td>
+        <td><select formControlName="status4">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark4" /></td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Bilge Pumping out system</td>
+        <td><input type="text" formControlName="valve5" /></td>
+        <td><input type="text" formControlName="desc5" /></td>
+        <td><input type="text" formControlName="ipms5" /></td>
+        <td><input type="text" formControlName="dl5" /></td>
+        <td><select formControlName="status5">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark5" /></td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Ballast System</td>
+        <td><input type="text" formControlName="valve6" /></td>
+        <td><input type="text" formControlName="desc6" /></td>
+        <td><input type="text" formControlName="ipms6" /></td>
+        <td><input type="text" formControlName="dl6" /></td>
+        <td><select formControlName="status6">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark6" /></td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>Chilled water system</td>
+        <td><input type="text" formControlName="valve7" /></td>
+        <td><input type="text" formControlName="desc7" /></td>
+        <td><input type="text" formControlName="ipms7" /></td>
+        <td><input type="text" formControlName="dl7" /></td>
+        <td><select formControlName="status7">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark7" /></td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>Sea water system</td>
+        <td><input type="text" formControlName="valve8" /></td>
+        <td><input type="text" formControlName="desc8" /></td>
+        <td><input type="text" formControlName="ipms8" /></td>
+        <td><input type="text" formControlName="dl8" /></td>
+        <td><select formControlName="status8">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark8" /></td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td>Engine room sprinkling system</td>
+        <td><input type="text" formControlName="valve9" /></td>
+        <td><input type="text" formControlName="desc9" /></td>
+        <td><input type="text" formControlName="ipms9" /></td>
+        <td><input type="text" formControlName="dl9" /></td>
+        <td><select formControlName="status9">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select></td>
+        <td><input type="text" formControlName="remark9" /></td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>MFFS</td>
+        <td><input type="text" formControlName="valve10" /></td>
+        <td><input type="text" formControlName="desc10" /></td>
+        <td><input type="text" formControlName="ipms10" /></td>
+        <td><input type="text" formControlName="dl10" /></td>
+        <!-- <td><input type="text" formControlName="status10" /></td> -->
+         <td>
+            <select formControlName="status10">
+    <option value="">Select</option>
+    <option value="SAT">SAT</option>
+    <option value="UNSAT">UNSAT</option>
+    <option value="NA">NA</option>
+    <option value="NW">NW</option>
+  </select>
+         </td>
+        <td><input type="text" formControlName="remark10" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+</form>
